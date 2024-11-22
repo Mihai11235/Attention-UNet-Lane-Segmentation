@@ -35,8 +35,6 @@ class AttentionGate(nn.Module):
         return x * attn
 
 
-# Modify the UNet architecture to include Attention Gates
-
 class UNetWithAttention(nn.Module):
     def __init__(self, in_channels, out_channels):
         super(UNetWithAttention, self).__init__()
