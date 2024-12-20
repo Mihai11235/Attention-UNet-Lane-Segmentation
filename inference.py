@@ -8,8 +8,6 @@ from PIL import Image
 import os
 
 plt.style.use('dark_background')
-
-
 class AttentionGate(nn.Module):
     def __init__(self, in_channels, gating_channels, inter_channels):
         super(AttentionGate, self).__init__()
@@ -191,6 +189,7 @@ def run_inference(image_path, mask_path):
 
 
 # Example usage
-image_path = './Dataset/100k_images_val_small_data/bdd100k/images/100k/val/b1e0c01d-dd9e6e2f.jpg'
+# image_path = './Dataset/100k_images_val_small_data/bdd100k/images/100k/val/b1e0c01d-dd9e6e2f.jpg'
+image_path = './cluj.jpg'
 mask_path = './Dataset/bdd100k_lane_labels_trainval_small_data/bdd100k/labels/lane/masks/val/b1e0c01d-dd9e6e2f.png'
 run_inference(image_path, mask_path)

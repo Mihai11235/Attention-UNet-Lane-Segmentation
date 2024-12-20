@@ -8,7 +8,6 @@ from tqdm import tqdm
 import os
 from PIL import Image
 
-
 class AttentionGate(nn.Module):
     def __init__(self, in_channels, gating_channels, inter_channels):
         super(AttentionGate, self).__init__()
