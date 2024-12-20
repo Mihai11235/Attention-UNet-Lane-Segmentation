@@ -4,4 +4,3 @@ opencv-python==4.10.0.82
 tqdm==4.65.0
 matplotlib==3.7.2
 scikit-learn
-

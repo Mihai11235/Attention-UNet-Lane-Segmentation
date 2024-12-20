@@ -8,6 +8,7 @@ from PIL import Image
 import os
 
 plt.style.use('dark_background')
+
 class AttentionGate(nn.Module):
     def __init__(self, in_channels, gating_channels, inter_channels):
         super(AttentionGate, self).__init__()

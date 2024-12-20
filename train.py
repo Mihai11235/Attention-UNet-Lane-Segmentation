@@ -9,6 +9,7 @@ import torch.optim as optim
 from sklearn.metrics import jaccard_score
 from tqdm import tqdm
 
+
 class BDD100KDataset(Dataset):
     def __init__(self, images_dir, masks_dir, transform=None):
         self.images_dir = images_dir
